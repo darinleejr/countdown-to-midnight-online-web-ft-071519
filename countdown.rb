@@ -18,23 +18,6 @@
 #   end
 # end
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 def countdown(seconds)
   while seconds > 0 
   puts "#{seconds} SECOND(S)!"
@@ -44,6 +27,8 @@ def countdown(seconds)
 end
 
 def countdown_with_sleep(seconds)
-  seconds += 1 
-  sleep(5)
+  while seconds > 0 
+  sleep 1 
+  puts "#{seconds} SECOND(S)!"
+  seconds -= 1 
 end
